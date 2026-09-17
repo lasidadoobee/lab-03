@@ -2,16 +2,13 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `Lasitha Jayasumana`
+- **CCID:** `lasitha@ualberta.ca`
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+Default parameters in function: https://kotlinlang.org/docs/functions.html#parameters-with-default-values
 
 ## Verbal Collaboration
 
-| Student Name | CCID      |
-| ------------ | --------- |
-| `student`    | `student` |
-| `<Add more>` | `<CCID>`  |
+N/A

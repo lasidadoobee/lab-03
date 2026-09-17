@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.listycity3.ui.theme.ListyCity3Theme
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +31,15 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     CityListScreen(
                         cities = cityRepository.cities,
+                        selectedCity = cityRepository.selectedCity,
+                        updateCityName = cityRepository.updateCityName,
+                        updateCityProvince = cityRepository.updateCityProvince,
+                        onAddCity = {cityRepository.addCity(it)},
+                        onModUpdateCity = {cityRepository.modUpdateCity(it)},
+                        onModUpdateProvince = {cityRepository.modUpdateProvince(it)},
+                        onUpdateCity = {cityRepository.updateCity()},
+                        onSelectCity = {cityRepository.selectCity(it)},
+                        onClearSelectedCity = {cityRepository.clearSelectedCity()},
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
